@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        android:id="@+id/menu_home"/>
+
+    <item android:title="Percent"
+        android:icon="@drawable/baseline_percent_24"
+        android:id="@+id/menu_percent"/>
+
+    <item android:title="Settings"
+        android:icon="@drawable/icons8_settings"
+        android:id="@+id/menu_Settings"/>
+</menu>
