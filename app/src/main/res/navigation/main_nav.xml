@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/menu_home"
-        android:name="com.protocodeapps.grouptaxcalculator.HomeFragment"
+        android:name="com.protocodeapps.grouptaxcalculator.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/menu_percent"
-        android:name="com.protocodeapps.grouptaxcalculator.PercentageFragment"
+        android:name="com.protocodeapps.grouptaxcalculator.fragment.PercentageFragment"
         android:label="fragment_percentage"
         tools:layout="@layout/fragment_percentage" />
     <fragment
         android:id="@+id/menu_Settings"
-        android:name="com.protocodeapps.grouptaxcalculator.SettingsFragment"
+        android:name="com.protocodeapps.grouptaxcalculator.fragment.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.protocodeapps.grouptaxcalculator;
+package com.protocodeapps.grouptaxcalculator.fragment;
 
 
 import android.content.SharedPreferences;

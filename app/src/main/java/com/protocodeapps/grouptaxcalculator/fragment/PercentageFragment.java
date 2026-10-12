@@ -1,4 +1,4 @@
-package com.protocodeapps.grouptaxcalculator;
+package com.protocodeapps.grouptaxcalculator.fragment;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.protocodeapps.grouptaxcalculator.R;
 
 
 public class PercentageFragment extends Fragment {

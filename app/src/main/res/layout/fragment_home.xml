@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomeFragment"
+    tools:context=".fragment.HomeFragment"
     android:background="@color/black"
     android:fitsSystemWindows="true">
 
@@ -34,61 +33,22 @@
                 android:background="#9A63FF"
                 android:text="Clear Screen"
                 android:textColor="#FFFFFF"
-                android:textSize="25dp" />
-
+                android:textSize="25dp"/>
 
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/tipText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tip Percentage:"
-            android:textColor="#FFFFFF"/>
-
-        <EditText
-            android:id="@+id/tipInput"
+        <Button
+            android:id="@+id/addPersonButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#444444"
-            android:hint="0%"
-            android:inputType="numberDecimal"
-            android:textColor="#FFFFFF" /> <!-- Dark background for input -->
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tax Percentage:"
-            android:textColor="#FFFFFF"/>
-
-        <EditText
-            android:id="@+id/taxInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:hint="11.5%"
+            android:background="#9A63FF"
+            android:text="Add Person"
             android:textColor="#FFFFFF"
-            android:background="#444444" /> <!-- Dark background for input -->
+            android:textSize="25dp" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enter person name and prices:"
-            android:textColor="#FFFFFF"/>
-
-        <EditText
-            android:id="@+id/productInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#444444"
-            android:hint="Name1#23.99#23.99 \n Name2#30.99#12.99"
-            android:textColor="#FFFFFF" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"/>
+            android:layout_height="wrap_content"/>
 
         <Button
             android:id="@+id/calculateButton"
@@ -98,17 +58,47 @@
             android:text="Calculate Total"
             android:textColor="#FFFFFF"
             android:textSize="25dp" />
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"/>
+
         <ScrollView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/outputTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#444444"
                 android:textColor="#FFFFFF" />
+        </ScrollView>
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+            <!-- Dynamic container (layout used) -->
+            <LinearLayout
+                android:id="@+id/peopleContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp" />
 
         </ScrollView>
+
+
 
     </LinearLayout>
 
